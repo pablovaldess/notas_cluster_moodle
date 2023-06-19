@@ -1,0 +1,11 @@
+Procedimiento (2) para instalar plugin en cluster moodle
+
+1. Dejar en cluster solo la maquina WEB01 (quitar el resto del cluster)
+2. moodle mantención
+3. modificar config.php para que solo acepte http y comentar sslproxy
+4. modificar archivo host local de equipo desde donde se hace instalación para llegar con url directo a la maquina
+5. Instalar plugin mediante interfaz web de moodle
+6. volver atras paso 3 y paso 4
+7. Quitar modo mantenimiento
+8. Replicar directorio en resto de servidores
+9. Volver a agregar servidores al cluster.
